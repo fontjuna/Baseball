@@ -14,6 +14,6 @@
     <string name="restart_title">リセット</string>
     <string name="send">判定</string>
     <string name="restart_message">ゲームをまた始めます</string>
-    <string name="simple_explanation">退屈しているなら、これを解いてください。</string>
+    <string name="simple_explanation">あなたが退屈だと感じたら、これを解決してください。\n</string>
     <string name="detailed_explanation">脳の運動はその数を推測するのに役立つ。</string>
 </resources>

@@ -14,6 +14,6 @@
     <string name="send">裁定</string>
     <string name="restart_message">重新开始玩游戏</string>
     <string name="infomation">我做了一些提取3 0 ~ 9日的数字。 我想这个号码。 你猜,如果位置和数量相比是正确的,是displyed。 如果比赛唯一的数字,显示。 这些数字面前, b是正确的numbes。 这个答案就是暗示。</string>
-    <string name="simple_explanation">如果你觉得无聊,解决这一点。</string>
+    <string name="simple_explanation">如果你感到无聊，解决这个问题。</string>
     <string name="detailed_explanation">大脑训练能猜出的号码。</string>
 </resources>

@@ -7,7 +7,7 @@
     <string name="send">Send</string>
     <string name="restart">Reset</string>
     <string name="guess">Your guess</string>
-    <string name="judge">Guess this number.</string>
+    <string name="judge">Result judgment</string>
     <string name="confirm_toast">Check your number!</string>
     <string name="correct_number">Congratulations! Right.</string>
     <string name="confirm">Confirm</string>
