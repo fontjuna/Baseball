@@ -1,12 +1,17 @@
 package noh.seung.hwa.baseball;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 import java.util.ArrayList;
 
@@ -15,6 +20,10 @@ import noh.seung.hwa.baseball.classes.ElementAdapter;
 import noh.seung.hwa.baseball.classes.Guess;
 
 public class BaseballActivity extends AppCompatActivity implements View.OnClickListener {
+
+    private static final String TAG = "MainActivity";
+
+    private AdView mAdView;
 
     private TextView mLeftMia;
     private TextView mCenterMia;
@@ -27,10 +36,16 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
     private Guess mGuess;
     ElementAdapter mAdapter;
 
+    AlertDialog.Builder mBuilder;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baseball);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
         mLeftYours = (TextView) findViewById(R.id.lnumber_yours);
         mCenterYours = (TextView) findViewById(R.id.cnumber_yours);
@@ -58,8 +73,20 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
         mElementList = new ArrayList<>();
         mAdapter = new ElementAdapter(BaseballActivity.this, mElementList);
 
-        gameStart();
+        mBuilder = new AlertDialog.Builder(this);
+        mBuilder.setTitle("리셋");
+        mBuilder.setMessage("게임을 처음 부터 시작 합니다.");
+        mBuilder.setNegativeButton("취소",null);
+        mBuilder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                gameStart();
+            }
+        });
+        mBuilder.create();
 
+        gameStart();
+//        mBuilder.show();
     }
 
     private void listSet(ArrayList<Element> list) {
@@ -71,16 +98,34 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.start_button:
-                gameStart();
+                mBuilder.show();
+//                gameStart();
                 break;
             case R.id.send_button:
                 valueJudge();
                 break;
             default:
-                mLeftYours.setText(mCenterYours.getText().toString());
-                mCenterYours.setText(mRightYours.getText().toString());
-                mRightYours.setText(((Button) findViewById(view.getId())).getText().toString());
+                setDigits(view);
                 break;
+        }
+    }
+
+    private void setDigits(View view) {
+        String[] digit = {"", "", ""};
+        digit[0] = mLeftYours.getText().toString();
+        digit[1] = mCenterYours.getText().toString();
+        digit[2] = mRightYours.getText().toString();
+        String keyStroke = ((Button) findViewById(view.getId())).getText().toString();
+        if ((digit[0] + digit[1] + digit[2]).isEmpty()) {
+            mLeftYours.setText(keyStroke);
+        } else if ((digit[1] + digit[2]).isEmpty()) {
+            mCenterYours.setText(keyStroke);
+        } else if (digit[2].isEmpty()) {
+            mRightYours.setText(keyStroke);
+        } else {
+            mLeftYours.setText(keyStroke);
+            mCenterYours.setText("");
+            mRightYours.setText("");
         }
     }
 

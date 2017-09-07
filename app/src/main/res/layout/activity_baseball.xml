@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,8 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#bbdefb"
-        android:textColor="#2e7d32"
-        android:text="0~9의 숫자중 3개를 뽑아 숫자를 만들었습니다. 이 숫자를 맞춰 보세요, 당신이 추측한 숫자와 비교하여 위치와 숫자가 맞으면 s, 숫자만 맞고 위치가 틀리면 b를 표시합니다. s와 b의 앞 숫자는 맞은 갯수입니다. 이 표시를 참고 하세요."/>
+        android:text="0~9의 숫자중 3개를 뽑아 숫자를 만들었습니다. 이 숫자를 맞춰 보세요, 당신이 추측한 숫자와 비교하여 위치와 숫자가 맞으면 s, 숫자만 맞고 위치가 틀리면 b를 표시합니다. s와 b의 앞 숫자는 맞은 갯수입니다. 이 표시를 참고 하세요."
+        android:textColor="#2e7d32"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -227,5 +228,13 @@
 
     </ListView>
 
+    <com.google.android.gms.ads.AdView
+        android:layout_gravity="center"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
 </LinearLayout>
