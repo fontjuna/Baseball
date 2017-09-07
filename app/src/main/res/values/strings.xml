@@ -1,4 +1,19 @@
 <resources>
-    <string name="app_name">숫자 맞추기</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_name">Numeric puzzle</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3056892491225323/9959057529</string>
+    <string name="infomation">I made a number by extracting 3 out of 0 ~ 9 numbers. Guess this number.  Compared to the number you guessed, if the position and the number are correct, s is displyed.  If it matches only number, b is displayed.  The numbers in front of s and b are the correct numbers. This answer is the hint.</string>
+    <string name="mia_text">My number</string>
+    <string name="your_text">Your guess</string>
+    <string name="send">Send</string>
+    <string name="restart">Reset</string>
+    <string name="guess">Your guess</string>
+    <string name="judge">Guess this number.</string>
+    <string name="confirm_toast">Check your number!</string>
+    <string name="correct_number">Congratulations! Right.</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="restart_message">Restart the Game.</string>
+    <string name="restart_title">Reset</string>
+    <string name="simple_explanation">If you feel bored, solve this.</string>
+    <string name="detailed_explanation">The brain exercises to guess the number.</string>
 </resources>

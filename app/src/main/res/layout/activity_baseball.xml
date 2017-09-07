@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#bbdefb"
-        android:text="0~9의 숫자중 3개를 뽑아 숫자를 만들었습니다. 이 숫자를 맞춰 보세요, 당신이 추측한 숫자와 비교하여 위치와 숫자가 맞으면 s, 숫자만 맞고 위치가 틀리면 b를 표시합니다. s와 b의 앞 숫자는 맞은 갯수입니다. 이 표시를 참고 하세요."
+        android:text="@string/infomation"
         android:textColor="#2e7d32"/>
 
     <LinearLayout
@@ -27,7 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="나의 숫자"/>
+            android:text="@string/mia_text"/>
 
         <TextView
             android:id="@+id/lnumber_mia"
@@ -61,7 +61,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="리셋"/>
+            android:text="@string/restart"/>
 
     </LinearLayout>
 
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="당신 추측"/>
+            android:text="@string/your_text"/>
 
         <TextView
             android:id="@+id/lnumber_yours"
@@ -116,7 +116,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="확인"/>
+            android:text="@string/send"/>
     </LinearLayout>
 
     <LinearLayout
@@ -229,6 +229,7 @@
     </ListView>
 
     <com.google.android.gms.ads.AdView
+        android:layout_margin="4dp"
         android:layout_gravity="center"
         android:id="@+id/adView"
         android:layout_width="wrap_content"

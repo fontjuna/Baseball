@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">숫자 맞추기</string>
+    <string name="cancel">취소</string>
+    <string name="confirm">확인</string>
+    <string name="confirm_toast">숫자를 확인 하세요!</string>
+    <string name="correct_number">축하 합니다. 맞았습니다.</string>
+    <string name="guess">당신의 추측</string>
+    <string name="judge">결과 판정</string>
+    <string name="mia_text">나의 숫자</string>
+    <string name="restart">리셋</string>
+    <string name="restart_message">게임을 다시 시작 합니다.</string>
+    <string name="your_text">당신 추측</string>
+    <string name="send">판정</string>
+    <string name="restart_title">리셋</string>
+    <string name="infomation">0~9의 숫자중 3개를 뽑아 숫자를 만들었습니다. 이 숫자를 맞춰 보세요, 당신이 추측한 숫자와 비교하여 위치와 숫자가 맞으면 s, 숫자만 맞고 위치가 틀리면 b를 표시합니다. s와 b의 앞 숫자는 맞은 갯수입니다. 이 표시를 참고 하세요.</string>
+    <string name="simple_explanation">심심풀이 숫자 알아 맞추기</string>
+    <string name="detailed_explanation">뇌는 숫자를 추측하기 위해 운동을 한다.</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rompecabezas de número</string>
+    <string name="correct_number">Felicitaciones, correcto.</string>
+    <string name="cancel">Cancelación</string>
+    <string name="confirm">Confirmación</string>
+    <string name="confirm_toast">Comprueba los números.</string>
+    <string name="guess">Conjetura</string>
+    <string name="your_text">Conjetura</string>
+    <string name="judge">Juicio final</string>
+    <string name="mia_text">Mis cifras</string>
+    <string name="restart">Comienzo</string>
+    <string name="restart_title">Riset</string>
+    <string name="send">Decisión</string>
+    <string name="restart_message">Empecemos con el juego.</string>
+    <string name="infomation">Hice un número mediante la extracción de 3 de 10 ~ 9 números. Supongo que este número. En comparación con el número que habran dado cuenta, si la posición y el número son correctas, de displyed. Si coincide con el número, pero se muestra. Los números en frente de B y de la numbes en lo correcto ... Esta respuesta es la pista.</string>
+    <string name="simple_explanation">Si te sientes aburrido, resolver esto.</string>
+    <string name="detailed_explanation">El cerebro tiene que adivinar el número.</string>
+</resources>

@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 import java.util.ArrayList;
 
@@ -21,7 +22,7 @@ import noh.seung.hwa.baseball.classes.Guess;
 
 public class BaseballActivity extends AppCompatActivity implements View.OnClickListener {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "BaseballActivity";
 
     private AdView mAdView;
 
@@ -43,6 +44,7 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baseball);
 
+        MobileAds.initialize(this, "ca-app-pub-3056892491225323/9959057529");
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
@@ -74,10 +76,10 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
         mAdapter = new ElementAdapter(BaseballActivity.this, mElementList);
 
         mBuilder = new AlertDialog.Builder(this);
-        mBuilder.setTitle("리셋");
-        mBuilder.setMessage("게임을 처음 부터 시작 합니다.");
-        mBuilder.setNegativeButton("취소",null);
-        mBuilder.setPositiveButton("확인", new DialogInterface.OnClickListener() {
+        mBuilder.setTitle(R.string.restart_title);
+        mBuilder.setMessage(R.string.restart_message);
+        mBuilder.setNegativeButton(R.string.cancel,null);
+        mBuilder.setPositiveButton(R.string.confirm, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
                 gameStart();
@@ -86,7 +88,6 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
         mBuilder.create();
 
         gameStart();
-//        mBuilder.show();
     }
 
     private void listSet(ArrayList<Element> list) {
@@ -143,7 +144,7 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
 
             if (right.equals("Success!")) {
                 miaDisplay();
-                Toast.makeText(this, "축하합니다. 맞았습니다!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, R.string.correct_number, Toast.LENGTH_SHORT).show();
             }
         }
     }
@@ -161,7 +162,7 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
             guese[2] = Integer.parseInt(mRightYours.getText().toString());
             return true;
         } catch (Exception e) {
-            Toast.makeText(this, "숫자를 확인 하세요!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.confirm_toast, Toast.LENGTH_SHORT).show(); //"숫자를 확인 하세요!"
             guese[0] = 0;
             guese[1] = 0;
             guese[2] = 0;
@@ -179,7 +180,7 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
 
     private void elementInitialize() {
         mElementList.clear();
-        mElementList.add(new Element("당신의 추측", "결과 판정"));
+        mElementList.add(new Element(getString(R.string.guess), getString(R.string.judge)));  //Element("당신의 추측", "결과 판정")
     }
 
     private void miaInitialize() {

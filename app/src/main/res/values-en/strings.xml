@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Numeric puzzle</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="confirm_toast">Check your number!</string>
+    <string name="your_text">Your guess</string>
+    <string name="send">Send</string>
+    <string name="restart_title">Reset</string>
+    <string name="restart_message">Restart the Game.</string>
+    <string name="guess">Your guess</string>
+    <string name="judge">Result of decision</string>
+    <string name="restart">Reset</string>
+    <string name="mia_text">My number</string>
+    <string name="correct_number">Congratulations! Right.</string>
+    <string name="infomation">We pulled out three out of every 0-9 numbers to make numbers. Compare this number, if you compare the numbers and numbers to match the numbers you assume, and indicate if the position is correct and the position is incorrect. The front numbers of paragraphs S and B correspond to the correct number. This answer is the hint.</string>
+    <string name="simple_explanation">If you feel bored, solve this.</string>
+    <string name="detailed_explanation">The brain exercises to guess the number.</string>
+</resources>

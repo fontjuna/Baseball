@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">数字パズル</string>
+    <string name="infomation">私は0~9の数字で3を抽出して数字を作りました。 この番号を当ててごらん。 あなたが予想した数字と比較して、位置と数字が正しければ、sは軽蔑されます。 数値のみ一致すれば、bが表示されます。 sとbの前の数値は正しい番号です。 この答えはヒントです。</string>
+    <string name="your_text">あなたの推測</string>
+    <string name="guess">あなたの推測</string>
+    <string name="judge">結果判定</string>
+    <string name="mia_text">私の数字</string>
+    <string name="cancel">キャンセル</string>
+    <string name="confirm">確認</string>
+    <string name="confirm_toast">数字を確認してください</string>
+    <string name="correct_number">おめでとうございます。 迎えました。</string>
+    <string name="restart">初期化</string>
+    <string name="restart_title">リセット</string>
+    <string name="send">判定</string>
+    <string name="restart_message">ゲームをまた始めます</string>
+    <string name="simple_explanation">退屈しているなら、これを解いてください。</string>
+    <string name="detailed_explanation">脳の運動はその数を推測するのに役立つ。</string>
+</resources>

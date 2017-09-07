@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">数字拼图</string>
+    <string name="correct_number">恭喜恭喜!</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="confirm_toast">请确认数字。</string>
+    <string name="guess">你的猜测</string>
+    <string name="your_text">你的猜测</string>
+    <string name="judge">结果判定</string>
+    <string name="mia_text">我的数字</string>
+    <string name="restart">初始化</string>
+    <string name="restart_title">复位</string>
+    <string name="send">裁定</string>
+    <string name="restart_message">重新开始玩游戏</string>
+    <string name="infomation">我做了一些提取3 0 ~ 9日的数字。 我想这个号码。 你猜,如果位置和数量相比是正确的,是displyed。 如果比赛唯一的数字,显示。 这些数字面前, b是正确的numbes。 这个答案就是暗示。</string>
+    <string name="simple_explanation">如果你觉得无聊,解决这一点。</string>
+    <string name="detailed_explanation">大脑训练能猜出的号码。</string>
+</resources>
