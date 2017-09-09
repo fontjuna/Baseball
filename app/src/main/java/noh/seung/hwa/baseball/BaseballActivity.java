@@ -44,7 +44,7 @@ public class BaseballActivity extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_baseball);
 
-        MobileAds.initialize(this, "ca-app-pub-3056892491225323/9959057529");
+        MobileAds.initialize(this, "ca-app-pub-3056892491225323~5931025059");
         mAdView = (AdView) findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);

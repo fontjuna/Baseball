@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Numeric puzzle</string>
-    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3056892491225323/9959057529</string>
+    <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3056892491225323/3964881852</string>
     <string name="infomation">I made a number by extracting 3 out of 0 ~ 9 numbers. Guess this number.  Compared to the number you guessed, if the position and the number are correct, s is displyed.  If it matches only number, b is displayed.  The numbers in front of s and b are the correct numbers. This answer is the hint.</string>
     <string name="mia_text">My number</string>
     <string name="your_text">Your guess</string>
